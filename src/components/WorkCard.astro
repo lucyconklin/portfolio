@@ -1,0 +1,83 @@
+---
+interface Props {
+  slug: string;
+  title: string;
+  description?: string;
+  client?: string;
+  thumbnail: string;
+}
+
+const { slug, title, description, client, thumbnail } = Astro.props;
+const displayText = client || description || '';
+---
+
+<article class="work-card">
+  <a href={`/work/${slug}/`} class="work-link">
+    <div class="work-image">
+      <img
+        src={thumbnail}
+        alt={title}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <div class="work-info">
+      <h3 class="work-title">{title}</h3>
+      {displayText && <p class="work-description">{displayText}</p>}
+    </div>
+  </a>
+</article>
+
+<style>
+  .work-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .work-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .work-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #f5f5f5;
+  }
+
+  .work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .work-card:hover .work-image img {
+    transform: scale(1.05);
+  }
+
+  .work-info {
+    padding: 1rem;
+  }
+
+  .work-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: #333;
+  }
+
+  .work-description {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+  }
+</style>

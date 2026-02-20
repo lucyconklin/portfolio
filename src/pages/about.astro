@@ -1,0 +1,152 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About" description="Lucy Conklin is a science illustrator and educator based in California, specializing in natural history and scientific illustration.">
+  <article class="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img
+          src="/images/conklin_bio.jpg"
+          alt="Lucy Conklin"
+          width="400"
+          height="500"
+          loading="eager"
+        />
+        <p class="photo-credit">Photo: Anna Howard Studios</p>
+      </div>
+
+      <div class="about-content">
+        <h1>About</h1>
+
+        <p>
+          As the child of two biologists, I thought all children dissected the dead birds and
+          frogs they found in the yard.
+        </p>
+
+        <p>
+          I earned my Physics degree before moving to New York City. After some time there,
+          I relocated to California to pursue science illustration formally, completing the
+          Science Illustration Certificate Program at California State University, Monterey Bay.
+        </p>
+
+        <p>
+          I currently teach Science Illustration at California State University, Monterey Bay
+          and University of California, Santa Cruz.
+        </p>
+
+        <p>
+          My freelance work includes projects for the Exploratorium, Edible Magazine,
+          Graze Magazine, Denver Museum of Nature and Science, WIRED Magazine, and the
+          Natural Resources Defense Council.
+        </p>
+
+        <div class="about-contact">
+          <h2>Get in Touch</h2>
+          <p>
+            <a href="mailto:lucy@lucyconklin.com">lucy@lucyconklin.com</a>
+          </p>
+          <ul class="social-links">
+            <li>
+              <a href="https://instagram.com/lucyconklin" target="_blank" rel="noopener noreferrer">
+                Instagram: @lucyconklin
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/LucyConklinIllustration" target="_blank" rel="noopener noreferrer">
+                Facebook: LucyConklinIllustration
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com/lucyconklin" target="_blank" rel="noopener noreferrer">
+                Pinterest: @lucyconklin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .about {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .about-container {
+      grid-template-columns: 1fr 1.5fr;
+      align-items: start;
+    }
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .photo-credit {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  .about-content h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    margin-bottom: 1rem;
+    color: #444;
+  }
+
+  .about-contact {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+
+  .about-contact h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-contact a {
+    color: #333;
+    transition: color 0.2s;
+  }
+
+  .about-contact a:hover {
+    color: #333;
+  }
+
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .social-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .social-links a {
+    font-size: 0.9rem;
+  }
+</style>

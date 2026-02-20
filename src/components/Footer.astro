@@ -1,0 +1,100 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <a href="mailto:lucy@lucyconklin.com" class="email">lucy@lucyconklin.com</a>
+    </div>
+
+    <div class="footer-social">
+      <a
+        href="https://instagram.com/lucyconklin"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Follow on Instagram"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a
+        href="https://facebook.com/LucyConklinIllustration"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Follow on Facebook"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+      </a>
+      <a
+        href="https://pinterest.com/lucyconklin"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Follow on Pinterest"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M8.5 14.5 A3.5 3.5 0 1 1 12 11 L12 11"></path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-copyright">
+      <p>&copy; {currentYear} Lucy Conklin. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    padding: 2rem 1.5rem;
+    margin-top: auto;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .email {
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.2s;
+  }
+
+  .email:hover {
+    color: #333;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-social a {
+    color: #666;
+    transition: color 0.2s;
+  }
+
+  .footer-social a:hover {
+    color: #333;
+  }
+
+  .footer-copyright {
+    font-size: 0.85rem;
+    color: #999;
+  }
+</style>

@@ -1,0 +1,101 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Now" description="What Lucy Conklin is currently working on and focusing on.">
+  <article class="now">
+    <div class="now-container">
+      <h1>Now</h1>
+
+      <p class="intro">
+        This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">now page</a> -
+        a snapshot of what I'm currently focused on.
+      </p>
+
+      <section class="now-section">
+        <h2>Work</h2>
+        <p>
+          I'm based in Denver, Colorado, working in tech.
+        </p>
+      </section>
+
+      <section class="now-section">
+        <h2>Education</h2>
+        <p>
+          I have a physics degree from Bucknell University and a Science Illustration Certificate from CSU Monterey Bay.
+        </p>
+      </section>
+
+      <section class="now-section">
+        <h2>Tech Work</h2>
+        <p>
+          For my technical projects, writing, and professional work, visit <a href="https://lucyconklin.tech" target="_blank" rel="noopener noreferrer">lucyconklin.tech</a>. 
+        </p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .now {
+    padding: 3rem 1.5rem;
+  }
+
+  .now-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .intro {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .intro a {
+    color: #333;
+    font-weight: bold;
+  }
+
+  .intro a:hover {
+    text-decoration: underline;
+  }
+
+  .now-section {
+    margin-bottom: 2rem;
+  }
+
+  .now-section p {
+    color: #444;
+  }
+
+  .now-section a {
+    color: #333;
+    font-weight: bold;
+  }
+
+  .now-section a:hover {
+    text-decoration: underline;
+  }
+
+  .now-section ul {
+    color: #444;
+    padding-left: 1.25rem;
+  }
+
+  .now-section li {
+    margin-bottom: 0.5rem;
+  }
+</style>

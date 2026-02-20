@@ -1,0 +1,101 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Shop" description="Purchase prints, cards, and original artwork by Lucy Conklin.">
+  <article class="shop">
+    <div class="shop-container">
+      <h1>Shop</h1>
+
+      <div class="shop-section">
+        <h2>Prints & Cards</h2>
+        <p>
+          Prints and cards are available for purchase on my Etsy site.
+        </p>
+        <a
+          href="https://www.etsy.com/shop/LucyConklinArt"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="shop-button"
+        >
+          Visit Etsy Shop
+        </a>
+      </div>
+
+      <div class="shop-section">
+        <h2>Original Artwork</h2>
+        <p>
+          Please email me for availability and pricing on original artwork.
+        </p>
+        <a href="mailto:lucy@lucyconklin.com" class="shop-button secondary">
+          Contact for Originals
+        </a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .shop {
+    padding: 3rem 1.5rem;
+  }
+
+  .shop-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .shop-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .shop-section:last-child {
+    border-bottom: none;
+  }
+
+  .shop-section p {
+    color: #444;
+    margin-bottom: 1.25rem;
+  }
+
+  .shop-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #27e8c9;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+
+  .shop-button:hover {
+    background-color: #1fd4b7;
+    color: #fff;
+  }
+
+  .shop-button.secondary {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #27e8c9;
+  }
+
+  .shop-button.secondary:hover {
+    background-color: #27e8c9;
+    color: #fff;
+  }
+</style>
