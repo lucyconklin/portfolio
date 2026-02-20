@@ -1,6 +1,6 @@
 ---
 title: "Birds"
-description: "A collection of bird illustrations showcasing detailed natural history artwork."
+description: "Personal work"
 medium: "Colored pencil on mylar"
 thumbnail: "/images/works/corvus.jpg"
 images:

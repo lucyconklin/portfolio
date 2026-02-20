@@ -1,6 +1,6 @@
 ---
 title: "Bike GIF"
-description: "Animated illustration created as an in-class demonstration."
+description: "In-class demonstration for students at California State University, Monterey Bay"
 medium: "Digital animation"
 thumbnail: "/images/works/bike.gif"
 order: 9

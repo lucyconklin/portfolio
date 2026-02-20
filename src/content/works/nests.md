@@ -1,6 +1,7 @@
 ---
 title: "Nests"
 description: "An ongoing illustration series featuring detailed nest drawings created from reference photography and museum collections at the Denver Museum of Nature and Science and the California Academy of Sciences."
+client: "Personal work"
 medium: "Colored pencils and graphite on mylar; ink and acrylic on clayboard"
 thumbnail: "/images/works/nest.jpg"
 images:

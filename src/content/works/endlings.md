@@ -1,6 +1,7 @@
 ---
 title: "Endlings"
 description: "A watercolor and ink painting depicting 'endlings' - creatures representing the last members of their species."
+client: "Personal work"
 medium: "Watercolor and ink"
 thumbnail: "/images/works/endlings.jpg"
 images:

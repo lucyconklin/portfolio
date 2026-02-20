@@ -1,6 +1,7 @@
 ---
 title: "Eastern Box Turtle"
 description: "Detailed illustration of an eastern box turtle."
+client: "Personal work"
 medium: "Watercolor and ink on Arches paper"
 thumbnail: "/images/works/turtle.jpg"
 images:
