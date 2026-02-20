@@ -3,10 +3,9 @@ title: "Common Canine Disorders"
 client: "Pet360"
 thumbnail: "/images/works/canine.jpg"
 images:
-  - "/images/works/canine.jpg"
-  - "/images/works/canine-ivdd.jpg"
-  - "/images/works/canine-acl.jpg"
-  - "/images/works/canine-mast.jpg"
+  - "/images/works/ivdd.jpg"
+  - "/images/works/am_bulldog_acl.jpg"
+  - "/images/works/mast_cell.jpg"
 order: 6
 tags: ["medical", "editorial"]
 ---

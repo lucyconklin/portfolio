@@ -4,11 +4,16 @@ description: "A series of 10 scientific illustration drawings created after a 3-
 client: "Exploratorium, San Francisco"
 thumbnail: "/images/works/exploratorium.jpg"
 images:
-  - "/images/works/exploratorium.jpg"
-  - "/images/works/exploratorium-eggs.jpg"
-  - "/images/works/exploratorium-autoclave.jpg"
-  - "/images/works/exploratorium-elodea.jpg"
-  - "/images/works/exploratorium-shrimp.jpg"
+  - "/images/works/eggs.jpg"
+  - "/images/works/autoclave.jpg"
+  - "/images/works/elodea.jpg"
+  - "/images/works/shrimp.jpg"
+  - "/images/works/stemcells.jpg"
+  - "/images/works/lfd.jpg"
+  - "/images/works/plankton.jpg"
+  - "/images/works/termites.jpg"
+  - "/images/works/urchin.jpg"
+  - "/images/works/zfish.jpg"
 order: 12
 tags: ["scientific", "museum"]
 ---
