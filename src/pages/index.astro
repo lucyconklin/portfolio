@@ -4,7 +4,9 @@ import Gallery from '@/components/Gallery.astro';
 import { getCollection } from 'astro:content';
 
 const works = await getCollection('works');
-const sortedWorks = works.sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const sortedWorks = works
+  .filter(w => !w.data.hidden)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 ---
 
 <BaseLayout title="Home">

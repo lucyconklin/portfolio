@@ -6,6 +6,7 @@ medium: "Digital (Adobe Photoshop)"
 thumbnail: "/images/works/space.jpg"
 year: "2016"
 order: 5
+hidden: true
 tags: ["digital", "tutorial", "space"]
 ---
 

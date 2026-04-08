@@ -7,11 +7,44 @@ interface Props {
 }
 
 const { works } = Astro.props;
+
+// Separate sectioned works from portfolio, preserving section order by lowest item order
+const portfolio = works.filter(w => !w.data.section);
+const sectionedWorks = works.filter(w => w.data.section);
+
+// Group by section, in the order each section first appears
+const sectionMap = new Map<string, CollectionEntry<'works'>[]>();
+for (const work of sectionedWorks) {
+  const key = work.data.section!;
+  if (!sectionMap.has(key)) sectionMap.set(key, []);
+  sectionMap.get(key)!.push(work);
+}
+const sections = Array.from(sectionMap.values());
+const hasSections = sections.length > 0;
 ---
+
+{sections.map((group, i) => (
+  <>
+    <section class="gallery">
+      <div class="gallery-grid">
+        {group.map((work) => (
+          <WorkCard
+            slug={work.id}
+            title={work.data.title}
+            description={work.data.description}
+            client={work.data.client}
+            thumbnail={work.data.thumbnail}
+          />
+        ))}
+      </div>
+    </section>
+    <div class="section-divider" aria-hidden="true"></div>
+  </>
+))}
 
 <section class="gallery">
   <div class="gallery-grid">
-    {works.map((work) => (
+    {portfolio.map((work) => (
       <WorkCard
         slug={work.id}
         title={work.data.title}
@@ -26,6 +59,13 @@ const { works } = Astro.props;
 <style>
   .gallery {
     padding: 2rem 0;
+  }
+
+  .section-divider {
+    width: 48px;
+    height: 2px;
+    background: #27e8c9;
+    margin: 0 auto;
   }
 
   .gallery-grid {

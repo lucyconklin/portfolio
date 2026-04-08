@@ -5,4 +5,5 @@ client: "quail.js"
 thumbnail: "/images/works/quail.jpg"
 order: 21
 tags: ["logo", "digital"]
+hidden: true
 ---

@@ -6,6 +6,7 @@ thumbnail: "/images/works/magnetar.jpg"
 images:
   - "/images/works/magnetar_large.jpg"
 order: 11
+hidden: true
 tags: ["digital", "space", "student work"]
 ---
 

@@ -4,5 +4,6 @@ description: "In-class demonstration for students at California State University
 medium: "Digital animation"
 thumbnail: "/images/works/bike.gif"
 order: 9
+hidden: true
 tags: ["digital", "animation"]
 ---

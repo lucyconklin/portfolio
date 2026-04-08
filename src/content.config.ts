@@ -13,7 +13,9 @@ const works = defineCollection({
     images: z.array(z.string()).optional(),
     tags: z.array(z.string()).optional(),
     featured: z.boolean().optional().default(false),
+    section: z.string().optional(),
     order: z.number().optional().default(99),
+    hidden: z.boolean().optional().default(false),
   }),
 });
 
