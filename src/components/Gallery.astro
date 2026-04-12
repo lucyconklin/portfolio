@@ -43,7 +43,7 @@ const hasSections = sections.length > 0;
 ))}
 
 <section class="gallery">
-  <div class="gallery-grid">
+  <div class="gallery-grid gallery-grid--compact">
     {portfolio.map((work) => (
       <WorkCard
         slug={work.id}
@@ -51,6 +51,7 @@ const hasSections = sections.length > 0;
         description={work.data.description}
         client={work.data.client}
         thumbnail={work.data.thumbnail}
+        compact={true}
       />
     ))}
   </div>
@@ -81,11 +82,19 @@ const hasSections = sections.length > 0;
     .gallery-grid {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    .gallery-grid--compact {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   @media (min-width: 1024px) {
     .gallery-grid {
       gap: 2rem;
+    }
+
+    .gallery-grid--compact {
+      gap: 1rem;
     }
   }
 </style>

@@ -1,6 +1,6 @@
 ---
 title: "Horse Sketches"
-description: "Sketches of horses."
+description: "Digital sketches of horses."
 thumbnail: "/images/works/horse-sketches.jpg"
 section: "commission"
 images:

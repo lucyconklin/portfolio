@@ -5,9 +5,10 @@ interface Props {
   description?: string;
   client?: string;
   thumbnail: string;
+  compact?: boolean;
 }
 
-const { slug, title, description, client, thumbnail } = Astro.props;
+const { slug, title, description, client, thumbnail, compact = false } = Astro.props;
 const displayText = client || description || '';
 ---
 
@@ -21,10 +22,12 @@ const displayText = client || description || '';
         decoding="async"
       />
     </div>
-    <div class="work-info">
-      <h3 class="work-title">{title}</h3>
-      {displayText && <p class="work-description">{displayText}</p>}
-    </div>
+    {!compact && (
+      <div class="work-info">
+        <h3 class="work-title">{title}</h3>
+        {displayText && <p class="work-description">{displayText}</p>}
+      </div>
+    )}
   </a>
 </article>
 
