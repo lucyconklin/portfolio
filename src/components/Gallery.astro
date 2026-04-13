@@ -20,10 +20,9 @@ for (const work of sectionedWorks) {
   sectionMap.get(key)!.push(work);
 }
 const sections = Array.from(sectionMap.values());
-const hasSections = sections.length > 0;
 ---
 
-{sections.map((group, i) => (
+{sections.map((group) => (
   <>
     <section class="gallery">
       <div class="gallery-grid">

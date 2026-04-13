@@ -50,10 +50,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <title>{siteTitle}</title>
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNREBQ5NDT"></script>
-    <script>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-FNREBQ5NDT"></script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){window.dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-FNREBQ5NDT');
     </script>
